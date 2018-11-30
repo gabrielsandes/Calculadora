@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="calculadora.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <meta charset="UTF-8" />
+    <title>Calculadora</title>
+  </head>
+  <body onload="inicio()">
+    <form id="formcalculadora" name="formcalculadora">
+          <h1>Calculadora</h1>
+          <input type="text" disabled id="visor" />
+            <table id="calculadora">
+                <td><input type="button" value="C" onclick="inicio()" /></td> 
+              <tr>
+                <td><input type="button" value="1" onclick="cliqueBotao(1)" /></td>
+                <td><input type="button" value="2" onclick="cliqueBotao(2)" /></td>
+                <td><input type="button" value="3" onclick="cliqueBotao(3)" /></td>
+                <td><input type="button" value="+" onclick="verificaOperador('+')" /></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="4" onclick="cliqueBotao(4)" /></td>
+                <td><input type="button" value="5" onclick="cliqueBotao(5)" /></td>
+                <td><input type="button" value="6" onclick="cliqueBotao(6)" /></td>
+                <td><input type="button" value="-" onclick="verificaOperador('-')" /></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="7" onclick="cliqueBotao(7)" /></td>
+                <td><input type="button" value="8" onclick="cliqueBotao(8)" /></td>
+                <td><input type="button" value="9" onclick="cliqueBotao(9)" /></td>
+                <td><input type="button" value="*" onclick="verificaOperador('*')" /></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="0" onclick="cliqueBotao(0)" /></td>
+                <td><input type="button" value="." onclick="cliqueBotao('.')" /></td>
+                <td><input type="button" value="=" onclick="verificaOperador('resultado')" /></td>
+                <td><input type="button" value="/" onclick="verificaOperador('/')" /></td>
+              </tr>
+            </table>
+    </form>
+  </body>
+</html>
